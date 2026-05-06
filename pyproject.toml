@@ -1,0 +1,48 @@
+[project]
+name = "comp-builders"
+version = "1.0.0"
+description = "Railway-oriented computation builders for typed Python workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "comp-builders contributors" }]
+keywords = ["railway-oriented-programming", "result", "option", "validation", "typing"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/your-org/comp-builders"
+Documentation = "https://github.com/your-org/comp-builders#readme"
+Issues = "https://github.com/your-org/comp-builders/issues"
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["comp_builders"]
+
+[dependency-groups]
+dev = [
+  "mypy>=1.20.2",
+  "pytest>=9.0.3",
+  "ruff>=0.15.12",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["comp_builders", "examples", "typing_tests"]
+exclude = ["^tests/"]

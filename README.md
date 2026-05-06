@@ -91,7 +91,7 @@ The core abstraction is `Builder.block`. Concrete builders define how yielded va
 ## Install
 
 ```bash
-uv add comp-builders
+uv add git+https://github.com/SaehwanPark/comp-builders.git
 ```
 
 For local development from this repository:

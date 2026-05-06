@@ -1,4 +1,6 @@
-# Pythonic Computaional Expresison Builders: `comp-builders`
+# Pythonic Computaional Expresison Builders
+
+## `comp-builders`
 
 ![comp-builders banner](assets/banner.png)
 
